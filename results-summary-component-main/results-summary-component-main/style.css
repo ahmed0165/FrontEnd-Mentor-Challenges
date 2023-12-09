@@ -1,0 +1,166 @@
+body {
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  margin: 5em auto;
+  flex-wrap: wrap;
+}
+
+.result {
+  width: 49%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  border: solid 1px hsl(252, 100%, 67%);
+  border-radius: 20px;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-around;
+  align-items: center;
+}
+.result h1 {
+  color: hsl(221, 100%, 96%);
+}
+.result .circle {
+  width: 50%;
+  height: 35%;
+  background-color: hsla(256, 72%, 46%, 1);
+  border: solid 1px hsla(256, 72%, 46%, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result .circle p:first-child {
+  font-size: 72px;
+  color: white;
+  margin: 0;
+}
+.result .circle p:last-child {
+  color: #888888;
+  margin: 0;
+}
+
+.result .result-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.result .result-content h2 {
+  margin-top: 50 px;
+  margin-bottom: 0;
+}
+
+.result .result-content p {
+  text-align: center;
+  color: #888888;
+}
+
+.summary {
+  width: 45%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: solid 1px white;
+  border-radius: 20px;
+  box-shadow: 1px 10px 18px #888888;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary-content div:first-child,
+.summary-content div:nth-child(2),
+.summary-content div:nth-child(3),
+.summary-content div:nth-child(4) {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-content div:first-child span,
+.summary-content div:nth-child(2) span,
+.summary-content div:nth-child(3) span,
+.summary-content div:nth-child(4) span {
+  display: flex;
+  align-items: center;
+}
+
+.summary-content div:first-child span img,
+.summary-content div:nth-child(2) span img,
+.summary-content div:nth-child(3) span img,
+.summary-content div:nth-child(4) span img {
+  margin-right: 10px;
+}
+
+.summary-content div:first-child span .number,
+.summary-content div:nth-child(2) span .number,
+.summary-content div:nth-child(3) span .number,
+.summary-content div:nth-child(4) span .number {
+  color: hsl(224, 30%, 27%);
+}
+.summary-content div:first-child span .hundred,
+.summary-content div:nth-child(2) span .hundred,
+.summary-content div:nth-child(3) span .hundred,
+.summary-content div:nth-child(4) span .hundred {
+  color: #888888;
+}
+
+.summary-content div:first-child {
+  background-color: hsl(221, 100%, 96%);
+  border: solid 1px hsl(221, 100%, 96%);
+  color: hsl(0, 100%, 67%);
+}
+
+.summary-content div:nth-child(2) {
+  background-color: hsl(221, 100%, 96%);
+  border: solid 1px hsl(221, 100%, 96%);
+  color: hsl(39, 100%, 56%);
+}
+.summary-content div:nth-child(3) {
+  background-color: hsl(221, 100%, 96%);
+  border: solid 1px hsl(221, 100%, 96%);
+  color: hsl(166, 100%, 37%);
+}
+.summary-content div:nth-child(4) {
+  background-color: hsl(221, 100%, 96%);
+  border: solid 1px hsl(221, 100%, 96%);
+  color: hsl(234, 85%, 45%);
+}
+
+.summary .button {
+  background-color: hsl(224, 30%, 27%);
+  border: solid 1px hsl(224, 30%, 27%);
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin: 50px;
+}
+
+.summary .button:hover {
+  background-color: hsl(252, 100%, 67%);
+}
+
+.attribution {
+  padding: 20px;
+  text-align: center;
+  color: #888888;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 25px;
+  text-decoration: none;
+  font-family: fantasy;
+}
