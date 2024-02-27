@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__content">
+            <span>TODO</span>
+            <button class="image-button"></button>
+          </div>
+          <li class="task__bar__header">
+            <button class="add__task"></button>
+            <input
+              id="search-input"
+              class="TaskSearchBar__input"
+              type="text"
+              placeholder="Create a New ToDo"
+              required
+            />
+          </li>
+        </div>
+      </header>
+      <section class="content">
+        <ul
+          class="taskBar__container"
+          id="sortable-list"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <li>
+            <div class="taskBar__footer">
+              <span class="items__status">items left</span>
+              <div class="status__buttons">
+                <button class="all__task">All</button>
+                <button class="active__task">Active</button>
+                <button class="completed__task">Completed</button>
+              </div>
+              <button class="clear__completed">Clear Completed</button>
+            </div>
+          </li>
+
+          <div class="drag__drop">Drag and drop to reorder list</div>
+        </ul>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
